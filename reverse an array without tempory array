@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <conio.h>
+#define N 6
+void print(int b[N])
+{
+	int i;
+	printf("\n");
+	for(i=0;i<N;i++)
+	{
+		printf("%3d",b[i]);
+	}
+}
+void swap(int a[N])
+{
+	int i,j;
+	for(i=0,j=N-1;i<N,j>=0;i++,j--)
+	{
+		if(i!=j)
+		{//swapping
+			a[i]=a[i]+a[j];
+			a[j]=a[i]-a[j];
+			a[i]=a[i]-a[j];
+		}
+		else
+		{
+			break;
+		}
+	}
+}
+void read(int b[N])
+{
+	int i;
+	for(i=0;i<N;i++)
+	{
+		printf("\n [%d] : ",i+1);
+		scanf("%d",&b[i]);
+	}
+}
+void main()
+{
+	int a[N],i,j;
+	clrscr();
+	read(a);
+	print(a);
+	swap(a);
+	print(a);
+	getch();
+}
