@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main()  {
+int arr1[100],arr2[100],len1,len2,i,p=0,q=0;
+Cout<<"Enter length of first array(max 100)\n";
+Cin>>len1;
+Cout<<"Enter sorted values for first array\n";
+for(i=0,i<len1,i++) {
+Cin>>arr1[i];
+}
+Cout<<"Enter length of second array\n";
+Cin>>len2;
+Cout<<"Enter sorted value of second array\n;
+for(i=0,i<len2,i++){
+Cin>>arr2[i];
+}
+While (p<=len1 && q<=len2) {
+if (arr1[p] < arr2[q]) {
+p++;
+} else if (arr1[p] < arr1[q]) {
+ q++
+ }else if (arr1[p] == arr2[q] {
+ Cout << arr1[p] <<" ";
+ p++;
+ q++;
+    }
+}
+    return0;
+    }
